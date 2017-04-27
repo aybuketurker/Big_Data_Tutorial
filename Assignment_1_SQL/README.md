@@ -26,7 +26,7 @@ Data Science 有 Database这门前置课程，所以一开始的内容全部是�
 - [ ] question7.sql
 - [ ] question8.sql
 - [ ] question9.sql
-- [ ] question10.sql （这个太难我没做...）
+- [ ] question10.sql
 
 
 ### Problem 2: SQL Schema, the Sequel to SQL
