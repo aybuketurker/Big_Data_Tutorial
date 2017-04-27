@@ -82,7 +82,7 @@ Your schema should also be able to answer any questions about types and sub- typ
 
 Without any further ado, here's the information your schema has to encode:
 
- > Purchase Properties  
+ > Purchase Properties  <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Customer 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Furniture
