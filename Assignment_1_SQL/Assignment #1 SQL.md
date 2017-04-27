@@ -20,11 +20,11 @@ problem1 , problem2 , and problem3 , which contain the stencils for your problem
 SQLite is installed on all department machines. It can be accessed from the command line using sqlite3 : this will allow you to type your sql queries directly into the terminal. You can exit this environment by pushing ctrl+D or by typing .exit and pressing enter.
 To load a pre-existing database, simply run:
 
-` $ sqlite3 /course/cs1951a/pub/assignments/sql/data/[database_file].db`
+` $ sqlite3 /course/cs1951a/pub/assignments/sql/data/[database_file].db` <br/>
 As a more explicit example, to open a sql environment where you can query the social.db database, you can type:
- `$ sqlite3 /course/cs1951a/pub/assignments/sql/data/social.db`
+ `$ sqlite3 /course/cs1951a/pub/assignments/sql/data/social.db` <br/>
 To execute a SQL statement that you have saved in a file, you can run the following command:
-`$ sqlite3 /course/cs1951a/pub/assignments/sql/data/[database_file].db < [query_file].sql `
+`$ sqlite3 /course/cs1951a/pub/assignments/sql/data/[database_file].db < [query_file].sql ` <br/>
 For problem 1, use social.db . For problem 3, use ikea.db .
 
 For more information on using SQLite from the command line, see http://www.sqlite.org/sqlite.html . Additionally, we have provided very helpful hints for most of the problems; you should be able to use these as a starting point if you get stuck before looking up additional information online.
