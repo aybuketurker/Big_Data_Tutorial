@@ -37,9 +37,9 @@ For more information on using SQLite from the command line, see http://www.sqlit
 #### 50 points
 We provided a simple database for a social network, social.db . Here's the schema:
 
->Student(**ID** int, **name** text, **grade** int) 
-Friend(**ID1** int, **ID2** int)
-Likes(**ID1** int, **ID2** int)
+>Student(**ID** int, **name** text, **grade** int) <br/>
+Friend(**ID1** int, **ID2** int)<br/>
+Likes(**ID1** int, **ID2** int)<br/>
 
 In the **Student** table, **ID** is a unique identifier for a particular student. **name** and **grade** correspond to the student's first name and grade.
 
@@ -83,89 +83,89 @@ Your schema should also be able to answer any questions about types and sub- typ
 Without any further ado, here's the information your schema has to encode:
 
  > Purchase Properties  <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Customer 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Furniture
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Amount of Product**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Price per Product**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Address
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date  <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Customer <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Furniture <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Amount of Product**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Price per Product**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Address<br/>
 
 ---
-> Date Properties
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Year**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Month**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Day**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Quarter**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Day-of-Week**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hour**
+> Date Properties<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Year**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Month**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Day**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Quarter**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Day-of-Week**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Hour**<br/>
 
 ---
-> Customer Properties
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Name**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Birthday**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Address
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Loyalty Program Member**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Loyalty Program points** 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Loyalty Program start date**
+> Customer Properties<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Name**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Birthday**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Address<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Loyalty Program Member**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Loyalty Program points** <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Loyalty Program start date**<br/>
 
 ---
-> Address Properties
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Country**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**State**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**City**
+> Address Properties<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Country**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**State**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**City**<br/>
 
 ---
-> Furniture Properties
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Name**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Description**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Height**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Width**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Length**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Weight**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Material**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assembly Box
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**height**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**width**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**length**
+> Furniture Properties<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Name**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Description**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Height**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Width**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Length**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Weight**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Material**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assembly Box<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**height**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**width**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**length**<br/>
 
 ---
-> Furniture Types
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bed
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bunk-Bed
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Bed Size**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Single-Bed
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Bed Size**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Double-Bed
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Bed Size**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Couch
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Standard Couch
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Legs**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pull-out Bed Couch
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Bed Size**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Legs**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Table
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coffee Table
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Legs**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kitchen Table
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Legs**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Drawers**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bed-side Table
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Legs**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Drawers**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dining-room Table
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Legs**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chair
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Desk Chair
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kitchen Chair
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dining Room Chair
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rocking Chair
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shelves
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Standard Shelves
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Num Shelves**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Armoire
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Num Shelves**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Standard Armoire
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Num Shelves**
+> Furniture Types<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bed<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bunk-Bed<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Bed Size**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Single-Bed<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Bed Size**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Double-Bed<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Bed Size**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Couch<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Standard Couch<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Legs**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pull-out Bed Couch<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Bed Size**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Legs**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Table<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coffee Table<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Legs**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kitchen Table<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Legs**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Drawers**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bed-side Table<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Legs**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Drawers**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dining-room Table<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Legs**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chair<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Desk Chair<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kitchen Chair<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dining Room Chair<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rocking Chair<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shelves<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Standard Shelves<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Num Shelves**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Armoire<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Num Shelves**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Standard Armoire<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Num Shelves**<br/>
 
 ---
 
@@ -212,8 +212,8 @@ Your task is to implement one iteration of the update step in SQL.
 
 The data you will be using is in the database ikea . It has the following schema:
 
->Furniture(**ID** int, **area** int, **cost** int) 
-Centroids(**ID** int, **area** int, **cost** int)
+>Furniture(**ID** int, **area** int, **cost** int) <br/>
+Centroids(**ID** int, **area** int, **cost** int)<br/>
 
 The values you will be comparing to each other are **area** and **cost**; i.e., in the above code x is **area** and y is **cost**. So, we are determining the similarity of different pieces of Furniture by seeing how similar (close in value) their (**area**, **cost**) tuples are when graphed in a Euclidean domain. The **IDs** are unique identifiers for the Furniture and the Centroids.
 
