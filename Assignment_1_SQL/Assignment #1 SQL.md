@@ -1,6 +1,4 @@
-﻿# Assignment #1 SQL
-
-标签（空格分隔）： CSCI1951a
+# Assignment #1 SQL
 
 ---
 
