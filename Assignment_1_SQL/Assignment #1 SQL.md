@@ -201,8 +201,7 @@ K-means clustering is an algorithm designed to sort data into groups based on si
 For each data_point:
      Determine closest centroid
  For each centroid:
-     Determine centroid location as average of data_points which ar
- e closest to that centroid
+     Determine centroid location as average of data_points which are closest to that centroid
 ```
 
 To determine the closest centroid, you will be using a variation on Euclidean distance: distance = $(x1 - x2)^2 + (y1 - y2)^2$ . To determine the centroids' new
