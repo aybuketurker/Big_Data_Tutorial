@@ -1,8 +1,5 @@
 ﻿# How to finish Lab #1 
 
-
-标签（空格分隔）： CSCI1951a
-
 ---
 
 ![autumn](http://wildlifearticles.co.uk/wp-content/uploads/2015/10/7006775-red-fox-hd.jpg)
